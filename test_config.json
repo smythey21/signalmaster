@@ -1,0 +1,24 @@
+{
+  "isDev": false,
+  "logLevel": 3,
+  "server": {
+    "port": 8889,
+    "secure": true, /* whether this connects via https */
+    "key": "config/sslcerts/key.pem",
+    "cert": "config/sslcerts/cert.pem",
+    "password": "kwivr"
+  },
+  "rooms": {
+    "maxClients": 0 /* maximum number of clients per room. 0 = no limit */
+  },
+  "stunservers" : [
+    {"url": "stun:104.236.75.146:3478"}
+  ],
+  "turnservers" : [
+    /*
+    { "url": "turn:your.turn.server.here",
+      "secret": "turnserversharedsecret"
+      "expiry": 86400 }
+      */
+  ]
+}
